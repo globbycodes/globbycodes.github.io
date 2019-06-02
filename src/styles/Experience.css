@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+
+.exp_text{
+  color: #494949;
+}
+
+hr{
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+#wcroc_link{
+  text-decoration: none;
+  color: #663366;
+}
+
+.experience_coop_wrapper{
+  margin-top: 10px;
+  position: relative;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "title"
+  "date"
+  "content_text"
+  "coop_img";
+}
+
+.title{
+  grid-area: title;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 18pt;
+}
+
+.date{
+  grid-area: date;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 16pt;
+}
+
+.content_text{
+  grid-area: content_text;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 14pt;
+}
+
+.coop_img{
+  grid-area: coop_img;
+  justify-self: center;
+}
+
+@media (min-width: 1400px) {
+  .title{
+    grid-area: title;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 20pt;
+    margin-left: 2px;
+  }
+
+  .date{
+    grid-area: date;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 18pt;
+    margin-left: 2px;
+  }
+
+  .content_text{
+    grid-area: content_text;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 16pt;
+  }
+
+
+  .experience_coop_wrapper{
+    margin-top: 3%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "title ."
+    "date coop_img"
+    "content_text coop_img";
+  }
+
+  .experience_res_assist_wrapper{
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .experience_ta_wrapper{
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}

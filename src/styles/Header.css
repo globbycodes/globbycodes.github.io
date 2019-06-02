@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+
+.avatar {
+  grid-area: avatar;
+  justify-self: center;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 7pt;
+  webkit-touch-callout: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.text_ {
+  grid-area: text_;
+  justify-self: center;
+  text-align: center;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 20pt;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 3%;
+  color: #494949;
+}
+
+.header{
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-areas:
+  "avatar"
+  "text_"
+  "contacts";
+}
+
+.contacts{
+  margin-top: 5%;
+  grid-area: contacts;
+  text-align: center;
+  color: #494949;
+}
+
+.contact_icon{
+  font-size: 45px;
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  color: #494949;
+}
+
+.contact_icon:hover{
+
+  color: grey;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+@media (min-width: 1500px) {
+  .header {
+    position: relative;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "avatar  text_"
+    "contacts  contacts"
+    ;
+  }
+
+  .text_{
+    margin-top: 20%;
+    text-align: center;
+  }
+
+  .avatar {
+    margin-top: 5%;
+    grid-area: avatar;
+    justify-self: center;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 7pt;
+    webkit-touch-callout: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+}
