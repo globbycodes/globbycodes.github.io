@@ -14,6 +14,23 @@ hr{
   color: #663366;
 }
 
+.experience_project_wrapper{
+  margin-top: 10px;
+  position: relative;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "projectTitle"
+  "projectContent_text"
+  "project_img";
+}
+
+.project_img_src{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .experience_coop_wrapper{
   margin-top: 10px;
   position: relative;
@@ -21,7 +38,6 @@ hr{
   grid-template-rows: auto;
   grid-template-areas:
   "title"
-  "date"
   "content_text"
   "coop_img";
 }
@@ -30,12 +46,6 @@ hr{
   grid-area: title;
   font-family: 'Ubuntu Mono', monospace;
   font-size: 18pt;
-}
-
-.date{
-  grid-area: date;
-  font-family: 'Ubuntu Mono', monospace;
-  font-size: 16pt;
 }
 
 .content_text{
@@ -49,9 +59,28 @@ hr{
   justify-self: center;
 }
 
+.projectTitle{
+  grid-area: projectTitle;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 18pt;
+}
+
+.projectContent_text{
+  grid-area: projectContent_text;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 14pt;
+}
+
+.project_img{
+  grid-area: project_img;
+  justify-self: center;
+  width: 70%;
+  max-width: 455px;
+}
+
 @media (min-width: 1400px) {
-  .title{
-    grid-area: title;
+  .projectTitle{
+    grid-area: projectTitle;
     font-family: 'Ubuntu Mono', monospace;
     font-size: 20pt;
     margin-left: 2px;
@@ -64,12 +93,38 @@ hr{
     margin-left: 2px;
   }
 
+  .projectContent_text{
+    grid-area: projectContent_text;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 16pt;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .experience_project_wrapper{
+    margin-top: 3%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "projectTitle ."
+    "projectContent_text project_img"
+    "projectContent_text project_img";
+  }
+
+  .title{
+    grid-area: title;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 20pt;
+    margin-left: 2px;
+  }
+
   .content_text{
     grid-area: content_text;
     font-family: 'Ubuntu Mono', monospace;
     font-size: 16pt;
   }
-
 
   .experience_coop_wrapper{
     margin-top: 3%;
@@ -79,7 +134,7 @@ hr{
     grid-template-rows: auto;
     grid-template-areas:
     "title ."
-    "date coop_img"
+    "content_text coop_img"
     "content_text coop_img";
   }
 

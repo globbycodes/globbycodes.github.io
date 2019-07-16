@@ -41,7 +41,7 @@ export class Content extends Component {
             About Me
           </button>
         </div>
-       <Switch switched={this.state.switched}/>
+        <Switch switched={this.state.switched}/>
       </div>
     )
   }
@@ -58,11 +58,38 @@ function Switch(props){
 const Experience = () => {
   return(
     <div>
+      <ExperiencePersonalProject/>
+      <hr/>
       <ExperienceCOOP/>
       <hr/>
       <ExperienceRA/>
       <hr/>
       <ExperienceTA/>
+    </div>
+  )
+}
+
+const ExperiencePersonalProject = () => {
+  return(
+    <div className="experience_project_wrapper">
+      <span className="projectTitle exp_text">
+        Recipe Finder
+      </span>
+      <br/>
+      <a className="project_img" href="https://globbimus.github.io/recipe-finder" target="_blank" rel="noreferrer noopener">
+        <img className="project_img_src" src={require('../images/project_photo.png')} alt="demo" />
+      </a>
+      <div className="projectContent_text exp_text">
+        <ul>
+          <li>Designed and implemented a web app that allows users to easily find recipes for both meals and cocktails</li>
+          <br/>
+          <li><b>Frontend</b>: React.js, Redux.js, Bootstrap</li>
+          <li><b>Open API</b>: <a id="wcroc_link" href="https://www.themealdb.com/" target="_blank" rel="noreferrer noopener" aria-hidden="true"> TheMealDB, </a>
+          <a id="wcroc_link" href="https://www.themealdb.com/" target="_blank" rel="noreferrer noopener" aria-hidden="true"> TheCocktailDB </a>
+           </li>
+          <li><b>Published via Github Pages</b>: <a id="wcroc_link" href="https://globbimus.github.io/recipe-finder" target="_blank" rel="noreferrer noopener" aria-hidden="true"> Recipe-Finder</a></li>
+        </ul>
+      </div>
     </div>
   )
 }
@@ -74,24 +101,22 @@ const ExperienceCOOP = () => {
         Software Developer co-op
       </span>
       <br/>
-      <span className="date exp_text">
-        March 2017 - May 2017
-      </span>
-        <a className="coop_img" href="https://github.com/GLOBBIMUS/digital-display-garden-iteration-4-sn1999ec" target="_blank" rel="noreferrer noopener">
-          <img src={require('../images/coop_pic3.png')} alt="demo" />
-        </a>
-        <div className="content_text exp_text">
-          <ul>
-            <li>Developed a visitor feedback system for <a id="wcroc_link" href="https://wcroc.cfans.umn.edu/" target="_blank" rel="noreferrer noopener" aria-hidden="true"> WCROC</a></li>
-            <li>Designed and implemented frontend API</li>
-            <li>Designed and implemented queries to extract aggregated data from the database</li>
-            <br/>
-            <li><b>Team size</b>: 6 people</li>
-            <li><b>Frontend</b>: Angular 2, TypeScript</li>
-            <li><b>Backend</b>: Java, MognoDB</li>
-            <li><b>Tools</b>: Gradle, Jasmin, Karma, Travis</li>
-          </ul>
-        </div>
+
+      <a className="coop_img" href="https://github.com/GLOBBIMUS/digital-display-garden-iteration-4-sn1999ec" target="_blank" rel="noreferrer noopener">
+        <img className="coop_img_src" src={require('../images/coop_pic3.png')} alt="demo" />
+      </a>
+      <div className="content_text exp_text">
+        <ul>
+          <li>Developed a visitor feedback system for <a id="wcroc_link" href="https://wcroc.cfans.umn.edu/" target="_blank" rel="noreferrer noopener" aria-hidden="true"> WCROC</a></li>
+          <li>Designed and implemented frontend API</li>
+          <li>Designed and implemented queries to extract aggregated data from the database</li>
+          <br/>
+          <li><b>Team size</b>: 6 people</li>
+          <li><b>Frontend</b>: Angular 2, TypeScript</li>
+          <li><b>Backend</b>: Java, MognoDB</li>
+          <li><b>Tools</b>: Gradle, Jasmin, Karma, Travis</li>
+        </ul>
+      </div>
     </div>
   )
 }
@@ -103,9 +128,6 @@ const ExperienceRA = () => {
         Research Assistant
       </span>
       <br/>
-      <span className="date exp_text">
-        August 2017 - Present
-      </span>
 
       <div className="content_text exp_text">
         <ul>
@@ -121,19 +143,16 @@ const ExperienceRA = () => {
 
 const ExperienceTA = () => {
   return(
-  <div className="experience_ta_wrapper">
+    <div className="experience_ta_wrapper">
       <span className="title exp_text">
         Teaching Assistant
       </span>
       <br/>
-      <span className="date exp_text">
-        January 2017 - May 2017
-      </span>
-        <div className="content_text exp_text">
-          <ul>
-            <li>Graded homework assignments of 30 students and provided useful feedback for Foundation of Computer Science</li>
-          </ul>
-        </div>
+      <div className="content_text exp_text">
+        <ul>
+          <li>Graded homework assignments of 30 students and provided useful feedback for Foundation of Computer Science</li>
+        </ul>
+      </div>
     </div>
   )
 }
@@ -151,7 +170,7 @@ const AboutMe = () => {
           <li><b>Programming languages</b>: Java, JavaScript/TypeScript, Clojure, Bash</li>
           <li><b>Exposed to</b>: AWS (Lambda, S3, DynamoDB), SpringBoot, C#, C, Python</li>
           <li><b>Web Technologies</b>: Rest, HTML5, CSS3</li>
-          <li><b>Libraries/Frameworks</b>: AngularJS/Angular 2, React.js, Node.js, Express, Junit, Jasmine, Karma</li>
+          <li><b>Libraries/Frameworks</b>: AngularJS/Angular 2, React.js, Node.js, Redux.js, Express, Junit, Jasmine, Karma</li>
           <li><b>Tools</b>: Git, NPM, Travis CI, Gradle, Vim, Atom, IntelliJ, Eclipse</li>
           <li><b>Databases</b>: Neo4j, MySQL/MariaDB, MongoDB</li>
         </ul>
@@ -166,17 +185,17 @@ const AboutMe = () => {
             <div className="icon_title ab_text">Pair Programming</div>
           </div>
           <div className="agile_dev">
-           <img src={require('../images/agile_development.png')} alt="Agile development icon" />
-          <div className="icon_title ab_text">Agile Development</div>
-         </div>
-         <div className="test_driven_dev">
+            <img src={require('../images/agile_development.png')} alt="Agile development icon" />
+            <div className="icon_title ab_text">Agile Development</div>
+          </div>
+          <div className="test_driven_dev">
             <img src={require('../images/test_driven_dev.png')} alt="Test driven development icon" />
-          <div className="icon_title ab_text">Test Driven Development</div>
-        </div>
-        <div className="cont_inter">
+            <div className="icon_title ab_text">Test Driven Development</div>
+          </div>
+          <div className="cont_inter">
             <img src={require('../images/cont_inter.png')} alt="Continuous integration icon" />
-          <div className="icon_title ab_text">Continuous Integration</div>
-        </div>
+            <div className="icon_title ab_text">Continuous Integration</div>
+          </div>
         </div>
       </div>
     </div>
