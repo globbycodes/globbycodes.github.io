@@ -77,7 +77,7 @@ const ExperiencePersonalProject = () => {
       </span>
       <br/>
       <a className="project_img" href="https://globbimus.github.io/recipe-finder" target="_blank" rel="noreferrer noopener">
-        <img className="project_img_src" src={require('../images/project_photo.png')} alt="demo" />
+        <img className="project_img_src" src={require('../images/demo.gif')} alt="demo" />
       </a>
       <div className="projectContent_text exp_text">
         <ul>
