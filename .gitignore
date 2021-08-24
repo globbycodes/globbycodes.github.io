@@ -5,14 +5,14 @@
 /.pnp
 .pnp.js
 
-/src/images
+# /src/images
 
 # testing
 /coverage
 /src/tests
 
-package-lock.json
-package.json
+# package-lock.json
+# package.json
 
 # production
 /build
