@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
 @import url('https://fonts.googleapis.com/css?family=VT323');
 
-body{
+body, html{
   background-image: url("../images/my_background_4.png");
   background-repeat: repeat;
+  height: 100%;
 }
 
 .wrapper{
@@ -13,6 +14,10 @@ body{
   background-repeat: repeat;
   box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 100%;
+}
+
+.icons{
+  height: 500px;
 }
 
 #coder{
@@ -28,10 +33,10 @@ body{
   color: #494949;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .wrapper{
-    margin-right: 20%;
-    margin-left: 20%;
+    margin-right: 10%;
+    margin-left: 10%;
     height: 100%;
   }
 }

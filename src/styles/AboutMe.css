@@ -12,8 +12,9 @@
 }
 
 .ab_skills_header{
-  text-align: center;
-  font-size: 20pt;
+  margin-left: 10px;
+  text-align: left;
+  font-size: 18pt;
 }
 
 li{
@@ -69,8 +70,9 @@ li{
   }
 
   .ab_skills_header{
-    text-align: center;
-    font-size: 20pt;
+    margin-left: 10px;
+    text-align: left;
+    font-size: 18pt;
   }
 
   .icon_title{

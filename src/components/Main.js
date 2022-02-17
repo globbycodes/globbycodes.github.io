@@ -30,7 +30,7 @@ const Header = () => {
       Software <span id="coder">&lt;developer&gt;</span><p/>
       </div>
       <div className="contacts">
-        <a className="contact_icon" href="https://github.com/GLOBBIMUS" target="_blank" rel="noreferrer noopener" aria-hidden="true">
+        <a className="contact_icon" href="https://github.com/globbycodes" target="_blank" rel="noreferrer noopener" aria-hidden="true">
           <i className="fab fa-github"></i>
         </a>
         <a className="contact_icon" href="https://www.linkedin.com/in/shawn-saliyev" target="_blank" rel="noreferrer noopener" aria-hidden="true">
