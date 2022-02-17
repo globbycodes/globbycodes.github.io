@@ -207,10 +207,10 @@ const AboutMe = () => {
         I have experience working within small teams, and wearing many technical, and product hats. 
         I have also worked on various Front-End and Back-End projects and am currently diving into Dev-Ops using Ansible and AWS.
       </div>
-      <div className="my_knowledge ab_text">
         <div className="ab_skills_header ab_text">
           Skills:
         </div>
+        <div className="my_knowledge ab_text">
         <ul>
           <li><b>Programming languages</b>: Java, Groovy, JavaScript, Bash, Python, Rust</li>
           <li><b>Databases</b>: SQL (MySQL, MariaDB, AuroraDB), Neo4j, MongoDB</li>
