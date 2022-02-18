@@ -168,11 +168,11 @@ const ExperienceRA = () => {
       <br/>
 
       <div className="content_text exp_text">
+      <div className="exp_descrp">Awarded research positions through MAP (Morris Academic Partnership) and UROP (Undergraduate Research Opportunities Program). Worked with the professor on collecting, analyzing, and visualizing the ancestries in evolutionary computation runs.</div>
         <ul>
-          <li>Awarded research position through MAP (Morris Academic Partnership) and UROP (Undergraduate Research Oppoprtunities Program)</li>
-          <li>Migrated evolutionary computation ancestry data from Titan graph database to Neo4j graph database</li>
+          <li>Migrated evolutionary computation ancestry data from <b>Titan</b> graph database to <b>Neo4j</b> graph database</li>
           <li>Developed web-based interactive visualization tool to simplify the data analysis</li>
-          <li>Analyzed and experimented with data</li>
+          <li>Presented a publication at the Midwest Instruction and Computing Symposium. <a href="https://github.com/globbycodes/Papers/blob/main/papers/Rerunning_the_Course_of_Evolutionary_Computation.pdf" target="_blank" rel="noreferrer noopener">Link to paper</a></li>
         </ul>
       </div>
     </div>
@@ -191,7 +191,7 @@ const ExperienceTA = () => {
       <br/>
       <div className="content_text exp_text">
         <ul>
-          <li>Graded homework assignments of 30 students and provided useful feedback for Foundation of Computer Science</li>
+          <li>Graded homework of 30 students, provided useful feedback and assisted students with their coursework. <br/>Class Name - Foundation of Computer Science.</li>
         </ul>
       </div>
     </div>

@@ -45,6 +45,7 @@ hr{
   grid-template-areas:
   "title"
   "exp_date"
+  "exp_descrp"
   "content_text"
 }
 
@@ -136,6 +137,12 @@ hr{
   margin-left: 10px;
   grid-area: exp_date;
   position: relative;
+}
+
+.exp_descrp{
+  grid-area: exp_descrp;
+  margin-left: 10px;
+  margin-top: 20px;
 }
 
 @media (min-width: 1400px) {
@@ -234,6 +241,7 @@ hr{
     margin-bottom: 5%;
     grid-template-areas:
     "title exp_date"
+    "exp_descrp exp_descrp"
     "content_text content_text"
   }
 
