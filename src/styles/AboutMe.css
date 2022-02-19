@@ -60,13 +60,15 @@ li{
   width: 200px;
 }
 
+.my_knowledge{
+  font-size: 14pt;
+  text-align: center;
+  /* margin-left: 20%; */
+}
+
 @media (min-width: 1400px) {
   .about_me_intro{
     font-size: 16pt;
-  }
-
-  .my_knowledge{
-    font-size: 14pt;
   }
 
   .ab_skills_header{

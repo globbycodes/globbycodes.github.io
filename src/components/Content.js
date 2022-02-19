@@ -203,7 +203,7 @@ const AboutMe = () => {
     <div className="about_wrapper">
       <div className="about_me_intro ab_text">
         Hello there! <br/>
-        I am a Software Developer with 2+ years of experience, skilled in Java, Groovy, Javascript and SQL.
+        I am a Software Developer with 3 years of experience, skilled in Java, Groovy, Javascript and SQL.
         I have experience working within small teams, and wearing many technical, and product hats. 
         I have also worked on various Front-End and Back-End projects and am currently diving into Dev-Ops using Ansible and AWS.
       </div>
@@ -211,13 +211,18 @@ const AboutMe = () => {
           Skills:
         </div>
         <div className="my_knowledge ab_text">
-        <ul>
+        {/* <ul>
           <li><b>Programming languages</b>: Java, Groovy, JavaScript, Bash, Python, Rust</li>
           <li><b>Databases</b>: SQL (MySQL, MariaDB, AuroraDB), Neo4j, MongoDB</li>
           <li><b>Dev Ops</b>: Ansible, AWS (EC2, S3, Glue, RedShift), Jenkins</li>
           <li><b>Libraries/Frameworks</b>: <i><b>Back-End:</b></i> Grails, Express, Node.js <i><b>Front-End:</b></i> React, Angular, jQuery</li>
           <li><b>Tools</b>: VSCode, IntelliJ, Vim, Git, NPM, Travis, Gradle, Power BI</li>
-        </ul>
+        </ul> */}
+         <b>Programming languages</b>: Java, Groovy, JavaScript, Bash, Python, Rust<br/>
+         <b>Databases</b>: SQL (MySQL, MariaDB, AuroraDB), Neo4j, MongoDB<br/>
+         <b>Dev Ops</b>: Ansible, AWS (EC2, S3, Glue, RedShift), Jenkins<br/>
+         <b>Libraries/Frameworks</b>: <i><b>Back-End:</b></i> Grails, Express, Node<br/>
+         <b>Tools</b>: VSCode, IntelliJ, Vim, Git, NPM, Travis, Gradle, Power BI<br/>
       </div>
       <div className="my_skills">
         {/* <div className="ab_skills_header ab_text">
