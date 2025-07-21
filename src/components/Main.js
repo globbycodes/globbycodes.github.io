@@ -27,7 +27,7 @@ const Header = () => {
       </div>
       <div className="text_">
         Shawn Saliyev <br/>
-      Software <span id="coder">&lt;developer&gt;</span><p/>
+      Software <span id="coder">&lt;Engineer&gt;</span><p/>
       </div>
       <div className="contacts">
         <a className="contact_icon" href="https://github.com/globbycodes" target="_blank" rel="noreferrer noopener" aria-hidden="true">

@@ -75,7 +75,7 @@ const ProfessionalExperience = () => {
   return(
     <div className="professional_experience_wrapper">
       <span className="exp_text title">
-        Software Developer at Code Technology
+        Software Engineer at Code Technology
       </span>
       <span className="exp_date">
         September 2019 - Present
@@ -83,12 +83,14 @@ const ProfessionalExperience = () => {
       <br/>
       <div className="professional_exp_text exp_text">
         <ul>
-          <li><b>Owned</b> back-end work from concept to completion for a new dynamic reporting tool that allows a customer success team to gather and evaluate the self reported patient outcomes data in one place and provide results to clients.</li>
-          <li><b>Rebuilt</b> the back-end code base that is responsible for loading assessments, making it possible to load them in any language instead of just two.</li>
-          <li><b>Improved</b> the back-end logic to overcome previous performance constraints which prevented displaying results of complex queries in the UI.  Changes shortened load times by 50%. Achieved the performance boost by using more efficient ways of pulling data from the SQL database and utilizing summary tables.</li>
-          <li><b>Upgraded</b> the continuous integration server through several versions of Ubuntu using Ansible and Bash. Reimplemented the scripts for backing up and restoring the server's configurations, making it easy to rotate the server when updates are made. This upgrade was necessary for maintaining a secured web infrastructure.</li>
-          <li><b>Upgraded</b> static data visualization tools to dynamic graphics solution using React.js</li>
-          <li><b>Maintained</b> and <b>debugged</b> the AWS Glue jobs for the ETL process. Validated that the data is consistent between our system and the data warehouse.</li>
+          <li><b>Designed</b> and <b>deployed</b> a secure AWS EKS cluster using Terraform and Ansible, replacing the frontend of a monolithic app and deploying initial backend Spring Boot containers for staged migration.</li>
+          <li><b>Implemented</b> SSO using AWS Cognito to connect multiple Identity Providers across legacy and modern stacks, collaborating with client IT teams to deliver secure access and troubleshoot issues.</li>
+          <li><b>Improved</b> and <b>maintained</b> CI/CD pipelines and server configurations using Ansible and Bash, ensuring smooth upgrades and secure infrastructure.</li>
+          <li><b>Built</b> ETL pipelines with AWS Glue and Redshift to support a Power BI data warehouse, including performance tuning and report optimization. </li>
+          <li><b>Optimized</b> critical legacy code and large export workflows, cutting run time from 2 hours to 40 seconds by redesigning backend data handling and using more memory-efficient data structures.</li>
+          <li><b>Rebuilt</b> the back-end code base that is responsible for loading assessments, making it possible to load them in any language instead of being limited to just two.</li>
+          <li><b>Optimized</b> the back-end logic to overcome previous performance constraints which prevented displaying results of complex queries in the UI.  Changes shortened load times by 50%. Achieved the performance boost by using more efficient ways of pulling data from the SQL database and utilizing summary tables.</li>
+          <li><b>Mentored</b> junior developers by helping them onboard, tackle their first tasks, learn how to read and contribute to a large codebase, and understand the infrastructure and DevOps tools behind it.</li>
         </ul>
       </div>
     </div>
@@ -203,9 +205,9 @@ const AboutMe = () => {
     <div className="about_wrapper">
       <div className="about_me_intro ab_text">
         Hello there! <br/>
-        I am a Software Developer with 3 years of experience, skilled in Java, Groovy, Javascript and SQL.
-        I have experience working within small teams, and wearing many technical, and product hats. 
-        I have also worked on various Front-End and Back-End projects and am currently diving into Dev-Ops using Ansible and AWS.
+        I'm a Software Engineer with 6 years of experience working in a small, adaptable team, where I build and modernize complex, data-driven application. I've designed and deployed secure, containerized cloud infrastructure using EKS, Terraform, and Ansible, including SSO integration for secure access and user management. I've improved performance in critical legacy code, reducing export times significantly, and developed new front-end and back-end features to meet evolving business needs
+        <br></br>
+        Outside of work, I enjoy playing soccer and table tennis!
       </div>
         <div className="ab_skills_header ab_text">
           Skills:
@@ -218,9 +220,9 @@ const AboutMe = () => {
           <li><b>Libraries/Frameworks</b>: <i><b>Back-End:</b></i> Grails, Express, Node.js <i><b>Front-End:</b></i> React, Angular, jQuery</li>
           <li><b>Tools</b>: VSCode, IntelliJ, Vim, Git, NPM, Travis, Gradle, Power BI</li>
         </ul> */}
-         <b>Programming languages</b>: Java, Groovy, JavaScript, Bash, Python, Rust<br/>
-         <b>Databases</b>: SQL (MySQL, MariaDB, AuroraDB), Neo4j, MongoDB<br/>
-         <b>Dev Ops</b>: Ansible, AWS (EC2, S3, Glue, RedShift), Jenkins<br/>
+         <b>Programming languages</b>: Java, Groovy, Python, Bash, JavaScript<br/>
+         <b>Databases</b>: SQL (MySQL, MariaDB, AuroraDB, Redshift), DynamoDB, Neo4j, MongoDB<br/>
+         <b>Dev Ops</b>: Ansible, Terraform, Kubernetes, Docker, AWS (EKS, EC2, S3, Glue, Cognito, Lambda), Jenkins<br/>
          <b>Libraries/Frameworks</b>: <i><b>Back-End:</b></i> Grails, Express, Node<br/>
          <b>Tools</b>: VSCode, IntelliJ, Vim, Git, NPM, Travis, Gradle, Power BI<br/>
       </div>
